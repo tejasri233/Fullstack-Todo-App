@@ -5,14 +5,15 @@ This application allows users to create, update, delete, and mark tasks as compl
 
 ## 📌 Features
 
-✅ Add new tasks with title and description
-✅ Edit existing tasks
-✅ Delete tasks
-✅ Mark tasks as Completed / Pending (Checkbox)
-✅ Strike-through effect for completed tasks
-✅ Responsive & modern UI design
-✅ RESTful API integration
-✅ Real-time UI updates
+- ✅ Add new tasks with title and description  
+- ✅ Edit existing tasks  
+- ✅ Delete tasks  
+- ✅ Mark tasks as Completed / Pending (Checkbox)  
+- ✅ Strike-through effect for completed tasks  
+- ✅ Responsive & modern UI design  
+- ✅ RESTful API integration  
+- ✅ Real-time UI updates  
+
 
 ## 🛠️ Tech Stack
 🔹 Frontend
