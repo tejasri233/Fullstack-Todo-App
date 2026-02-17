@@ -38,23 +38,26 @@ REST APIs
 MySQL Database
 
 
-## 🏗️ Project Structure
+## 📁 Project Structure
+
+```
 Fullstack-Todo-App
 │
-├── backend/
-│   ├── controller/
-│   ├── service/
-│   ├── repository/
-│   ├── model/
+├── backend
+│   ├── controller
+│   ├── service
+│   ├── repository
+│   ├── model
 │   └── DemoApplication.java
 │
-├── frontend/
-│   ├── src/
+├── frontend
+│   ├── src
 │   │   ├── App.jsx
 │   │   └── main.jsx
 │   └── package.json
 │
 └── README.md
+```
 
 ## ⚙️ How It Works
 
