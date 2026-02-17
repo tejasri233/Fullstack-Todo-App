@@ -1,0 +1,48 @@
+package com.example.demo.service;
+
+import com.example.demo.model.Todo;
+import com.example.demo.repository.TodoRepository;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class TodoService {
+
+    private final TodoRepository repository;
+
+    public TodoService(TodoRepository repository) {
+        this.repository = repository;
+    }
+
+    public Todo create(Todo todo) {
+        return repository.save(todo);
+    }
+
+    public List<Todo> getAll(Boolean completed) {
+        if (completed != null) {
+            return repository.findByCompleted(completed);
+        }
+        return repository.findAll();
+    }
+
+
+
+
+     public Todo update(Long id, Todo updatedTodo) {
+
+    Todo existing = repository.findById(id)
+            .orElseThrow(() -> new RuntimeException("Todo not found"));
+
+    existing.setTitle(updatedTodo.getTitle());
+    existing.setDescription(updatedTodo.getDescription());
+    existing.setCompleted(updatedTodo.isCompleted());
+
+    return repository.save(existing);
+}
+
+
+    public void delete(Long id) {
+        repository.deleteById(id);
+    }
+}
