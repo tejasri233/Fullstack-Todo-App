@@ -141,4 +141,4 @@ Pagination
 Deployment (Render / Railway / Vercel)
 
 ## 👨‍💻 Developed By
-Tejas Sri Gorle
+Teja Sri Gorle
